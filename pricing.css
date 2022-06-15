@@ -1,0 +1,89 @@
+html{
+    box-sizing: border-box;
+    font-family:'Open sans',sans-serif;
+}
+
+body{
+    background-color: rgb(96, 204, 243);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+   
+}
+.panel{
+    background-color: white;
+    border-radius: 10px;
+    padding: 15px 25px;
+    /* width: 100%; */
+    max-width: 960px;
+    display: flex;
+    flex-direction: column;
+    text-transform: uppercase;
+    text-align: center;  
+}
+img{
+    width: 300px;
+    height: 250px;
+    margin-bottom:20px ;
+}
+.pricing-plan{
+    border-bottom: solid 1px rgb(168, 165, 165);
+}
+.pricing-header{
+    color: gray;
+    font-weight: 700;
+}
+.pricing-features{
+    margin: 30px 0px 25px 0px;
+    color: blue;  
+}
+.pricing-features-item{
+    list-style: none;
+    font-weight: 600;
+    line-height: 1.5;
+    padding: 15px 0;
+    border-top: solid 1px rgb(168, 165, 165);
+}
+.pricing-features-item:last-child{
+    border-bottom:solid 1px rgb(168, 165, 165) ;
+}
+.pricing-price{
+    color: blue;
+    display: block;
+    font-size: 32px;
+    font-weight: 700;
+}
+.pricing-button{
+    border: solid 1px blue;
+    border-radius: 10px;
+    display: inline-block;
+    color: blue;
+    padding: 15px 25px;
+    text-decoration: none;
+    margin: 20px ;
+    transition: background-color 250ms ease-in-out;
+}
+.pricing-button:hover, .pricing-button:focus{
+    background-color: rgb(191, 191, 201);
+}
+.pricing-button.is-featured{
+    background-color: rgb(53, 154, 232);
+    color: white;
+}
+.pricing-button.is-featured:hover, .pricing-button.is-featured:focus{
+    background-color: rgb(6, 98, 169);
+}
+@media (min-width: 900px){
+.panel{
+    flex-direction: row;
+}
+    .pricing-plan{
+        border-bottom: none;
+        border-right: 1px solid rgb(191, 191, 201) ;
+        
+    }
+    .pricing-plan:last-child{
+        border-right: none;
+    }
+}
